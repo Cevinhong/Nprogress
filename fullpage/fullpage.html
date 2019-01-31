@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./dist/fullpage.css">
+	<script src="./jquery.min.js"></script>
+	<script src="./dist/fullpage.js"></script>
+</head>
+<body>
+	<div id="wrap">
+    	<div class="section">第一屏</div>
+    	<div class="section">第二屏</div>
+    	<div class="section">第三屏</div>
+    	<div class="section">第四屏</div>
+	</div>
+
+	<script>
+		$(function(){
+    		$('#wrap').fullpage({
+    			navigation : true,
+    			sectionsColor : ["greenyellow","pink","skyblue","yellow"] 
+    		});
+		});
+	</script>
+</body>
+</html>
